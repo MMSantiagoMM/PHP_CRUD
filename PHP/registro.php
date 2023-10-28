@@ -1,22 +1,4 @@
 <?php
-/* Comentario en bloque
-//Comentario en linea
-
-print("Hello");
-echo " <h1> PHP </h1>";
-
-$edad = 28;
-$nombre = 'Santiago';
-
-echo "Esta es la edad $edad años";
-
-echo "<br> EL nombre es: ".$nombre;
-
-
-for ($i=0; $i < 5 ; $i++) { 
-    echo "<br> Numero $i ";
-};
-*/
 
 include 'conexion.php';
 
@@ -36,11 +18,6 @@ $enviar = $conectar-> prepare("INSERT INTO Usuario VALUES (null,?,?)");
 
 
 $enviar->execute([$correo,$passwordHash1]);
-
-
-
-
-
 
 
 header('Location: ../index.php');

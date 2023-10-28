@@ -53,6 +53,6 @@
     </section>
 
 
-    <script src="../JS/bootstrap.jsrrdr4edd"></script>
+    <script src="../JS/bootstrap.js"></script>
 </body>
 </html>

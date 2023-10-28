@@ -10,12 +10,4 @@ $conectar = new PDO("mysql: server= $servidor; dbname=$BD", $usuario, $password)
 
 echo "Conectada";
 
-
-
-
-
-
-
-
-
 ?>
