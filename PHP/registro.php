@@ -1,10 +1,10 @@
 <?php
 
-include 'conexion.php';
+include 'conection.php';
 
-$correo = $_POST['correo'];
-$password = $_REQUEST['password'];
-$passwordHash1 = password_hash($password,PASSWORD_BCRYPT);
+$title = $_POST['title'];
+$writer = $_REQUEST['writer'];
+$description = $_POST['description'];
 
 /*
 $sql = "INSERT INTO Usuario VALUES(null,'$correo','$passwordHash1')";
@@ -12,12 +12,12 @@ $sql = "INSERT INTO Usuario VALUES(null,'$correo','$passwordHash1')";
 $conectar -> query($sql);
 */
 
-$enviar = $conectar-> prepare("INSERT INTO Usuario VALUES (null,?,?)"); 
+$enviar = $conectar-> prepare("INSERT INTO Books VALUES (null,?,?,?)"); 
 
 //$enviar->execute(array($correo,$passwordHash1)); más seguro
 
 
-$enviar->execute([$correo,$passwordHash1]);
+$enviar->execute([$title,$writer,$description]);
 
 
 header('Location: ../index.php');

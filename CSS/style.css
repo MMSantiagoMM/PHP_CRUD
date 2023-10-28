@@ -1,0 +1,62 @@
+
+.body-form{
+    background-image: url('/IMG/depositphotos_31216585-stock-photo-vintage-magnifying-glass-lies-on.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: none;
+}
+
+.form-container{
+    background-color: rgba(255, 255, 255, 0.421); 
+}
+.description{
+    height: 100px;
+}
+
+.btn-send, .btn-send-index{
+    background-color: brown;
+    color: aliceblue;
+    margin-left: 200px;
+    height: 60px;
+    width: 100px;
+    font-size: 20px;
+    border-color: navajowhite;
+    border-radius: 10px;
+}
+.btn-send-index{
+    margin-left: 0;
+}
+
+.title{
+    color: rgb(120, 31, 31);
+}
+
+.body-index{
+    background-image: url('/IMG/map-6784496_640.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-index{
+    background-color: rgba(0, 0, 0, 0.512);
+    color: aliceblue;
+}
+.body-edit{
+    background-image: url('/IMG/petra-6294051_640.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-edit{
+    background-color: rgba(240, 248, 255, 0.518);
+    width: 100px;
+}
+.btn-send-edit{
+    background-color: brown;
+    color: aliceblue;
+    border-color: navajowhite;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+}
+
