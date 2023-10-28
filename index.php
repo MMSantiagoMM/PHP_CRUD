@@ -28,7 +28,9 @@
 </head>
 <body class="row vh-100 justify-content-center align-items-center">
     <section class="col-auto">
+        
         <h1>DATOS</h1>
+        <button type="submit" class="btn btn-success" onclick="window.location.href = '../form.html'" >Registrar</button>
         <table class="table">
   <thead>
     <tr>

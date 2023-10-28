@@ -53,7 +53,7 @@ $update->execute();
               <input type="password" class="form-control" id="exampleInputPassword1" name="contraseña">
             </div>
             
-            <button type="submit" class="btn btn-primary">Envia
+            <button type="submit" class="btn btn-primary">Enviar
             </button>
             <button type="button" class="btn btn-warning" onclick="window.location.href = '../index.php'">Retornar</button>
           </form>
