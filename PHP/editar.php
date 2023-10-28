@@ -5,20 +5,22 @@ include 'conexion.php';
 
 $id = $_GET['id'];
 
-/*$sql = $conectar -> query("SELECT * FROM Usuario WHERE id=$id");
+$sql = $conectar -> query("SELECT * FROM Usuario WHERE id=$id");
 
 $registro = $sql->fetch(PDO::FETCH_LAZY);
 
 $correo = $registro['correo'];
-*/
+
 
 $nuevoCorreo = $_POST['email'];
 
 $nuevaContraseña = $_POST['contraseña'];
 
+$passwordHash1 = password_hash($nuevaContraseña,PASSWORD_BCRYPT);
 
 
-$update = $conectar->prepare("UPDATE Usuario SET correo = '$nuevoCorreo', contraseña = '$nuevaContraseña' WHERE id = $id");
+
+$update = $conectar->prepare("UPDATE Usuario SET correo = '$nuevoCorreo', contraseña = '$passwordHash1' WHERE id = $id");
 
 
 $update->execute();
@@ -51,13 +53,13 @@ $update->execute();
               <input type="password" class="form-control" id="exampleInputPassword1" name="contraseña">
             </div>
             
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Envia
+            </button>
+            <button type="button" class="btn btn-warning" onclick="window.location.href = '../index.php'">Retornar</button>
           </form>
     </section>
-
-
-
     <script src="../JS/bootstrap.js"></script>
 </body>
 </html>
+
 
